@@ -26,8 +26,9 @@ really a list containing a function to
 2.  get the value of the vector
 3.  set the value of the mean
 4.  get the value of the mean
-
+b =
 <!-- -->
+    a <- c(1,2,3,4,5) 
 
     makeVector <- function(x = numeric()) {
             m <- NULL
@@ -42,6 +43,8 @@ really a list containing a function to
                  setmean = setmean,
                  getmean = getmean)
     }
+    
+    b = makevector(a)
 
 The following function calculates the mean of the special "vector"
 created with the above function. However, it first checks to see if the
